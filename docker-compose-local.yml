@@ -1,0 +1,14 @@
+services:
+  cafe-recommendation-database:
+    container_name: simple-shopping-mall-database
+    build:
+      dockerfile: Dockerfile
+      context: ./database
+    image: ekgus419/simple-shopping-mall-database
+    environment:
+      - MARIADB_DATABASE=simple-shopping-mall
+      - MARIADB_ROOT_PASSWORD=${SPRING_DATASOURCE_PASSWORD}
+    volumes:
+      - ./database/config:/etc/mysql/conf.d
+    ports:
+      - "13307:3306"
