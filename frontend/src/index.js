@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import './index.css';
 
 const theme = createTheme({
     palette: {
@@ -22,4 +23,11 @@ ReactDOM.render(
         <App />
     </ThemeProvider>,
     document.getElementById('root')
+);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );
