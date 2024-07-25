@@ -1,4 +1,3 @@
-// src/pages/EditProductPage.js
 import React, { useEffect, useState } from 'react';
 import { Container, Typography, TextField, Button } from '@mui/material';
 import { useParams, useNavigate } from 'react-router-dom';

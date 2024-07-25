@@ -1,8 +1,6 @@
-// src/pages/HomePage.js
-import React, { useEffect } from 'react'; // useEffect를 임포트해야 합니다
+import React, { useEffect } from 'react';
 
 import { useNavigate } from 'react-router-dom';
-import { Container, Typography } from '@mui/material';
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -12,7 +10,7 @@ const HomePage = () => {
         navigate('/products');
     }, [navigate]);
 
-    return null; // No UI content to display as we are redirecting
+    return null;
 };
 
 export default HomePage;

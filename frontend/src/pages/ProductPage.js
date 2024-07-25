@@ -1,4 +1,3 @@
-// src/pages/ProductPage.js
 import React, { useEffect, useState } from 'react';
 import { Container, Typography, Button } from '@mui/material';
 import { useParams, Link, useNavigate } from 'react-router-dom';
